@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Document</title>
+    </head>
+    <body>
+        <h1>¡Registrate y únete a la comunidad!</h1>
+
+        <form action="/registro" method="post">
+            <div>
+                <label>Nombre : </label>
+                <input type="text" name="nombre_completo" placeholder="Ingresa tu nombre " />
+            </div>
+            <br />
+        </form>
+        
+            <div>
+                <label>Apellido : </label>
+                 <input type="text" name="apellido_completo" placeholder="Ingresa tu Apellido " />
+            </div>
+            <br />
+            <div>
+                <label>Correo electrónico: </label>
+                <input type="text" name="correo" placeholder="Ingresa tu correo " />
+            </div>
+            <br />
+            <div>
+                <label>Contraseña: </label>
+                <input type="password" name="contraseña" placeholder="Ingresa tu contraseña" />
+            </div>
+            <br /><br />
+            <div>
+                <input type="checkbox" name="suscribirse" id="suscribirse" checked />
+                <label for="suscribirse">Deseo suscribirme al boletín informativo.</label>
+            </div>
+            <br />
+
+            <select> 
+                <option value="elige tu respuesta">Opciones</option>  
+                <option value="elige tu respuesta">Casa</option>   
+                <option value="elige tu respuesta">Departamento</option>   
+                <option value="elige tu respuesta">Cabaña</option>    
+            </select>
+
+
+        
+            <input type="submit" value="Registrarse" />
+        </form>
+    </body>
+</html>
