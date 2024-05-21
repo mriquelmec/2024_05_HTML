@@ -1,52 +1,83 @@
 <!DOCTYPE html>
 <html lang="en">
-    <head>
-        <meta charset="UTF-8" />
-        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-        <title>Document</title>
-    </head>
-    <body>
-        <h1>¡Registrate y únete a la comunidad!</h1>
 
-        <form action="/registro" method="post">
-            <div>
-                <label>Nombre : </label>
-                <input type="text" name="nombre_completo" placeholder="Ingresa tu nombre " />
-            </div>
-            <br />
-        </form>
-        
-            <div>
-                <label>Apellido : </label>
-                 <input type="text" name="apellido_completo" placeholder="Ingresa tu Apellido " />
-            </div>
-            <br />
-            <div>
-                <label>Correo electrónico: </label>
-                <input type="text" name="correo" placeholder="Ingresa tu correo " />
-            </div>
-            <br />
-            <div>
-                <label>Contraseña: </label>
-                <input type="password" name="contraseña" placeholder="Ingresa tu contraseña" />
-            </div>
-            <br /><br />
-            <div>
-                <input type="checkbox" name="suscribirse" id="suscribirse" checked />
-                <label for="suscribirse">Deseo suscribirme al boletín informativo.</label>
-            </div>
-            <br />
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
-            <select> 
-                <option value="elige tu respuesta">Opciones</option>  
-                <option value="elige tu respuesta">Casa</option>   
-                <option value="elige tu respuesta">Departamento</option>   
-                <option value="elige tu respuesta">Cabaña</option>    
-            </select>
+    <title>Document</title>
 
+</head>
 
-        
-            <input type="submit" value="Registrarse" />
-        </form>
-    </body>
+<body>
+    <h1>¡Registrate y únete a la comunidad!</h1>
+
+    <form action="/registro" method="post">
+        <div>
+            <label for="Nombre">Nombre:</label>
+            <input type="text" id="Nombre" placeholder="Ingresa tu nombre" />
+        </div>
+        <br>
+    </form>
+
+    <div>
+        <label for="Apellido">Apellido:</label>
+        <input type="text" id="Apellido" placeholder="Ingresa tu apellido " />
+    </div>
+    <br>
+    <div>
+        <label for="Correo">Correo electrónico: </label>
+        <input type="text" id="Correo" placeholder="Ingresa tu correo " />
+    </div>
+    <br>
+    <div>
+        <label for="Contraseña">Contraseña:</label>
+        <input type="password" id="contraseña" placeholder="Ingresa tu contraseña" />
+    </div>
+    <br>
+    <div>
+        <label for="Confirmar Contraseña">Confirmar Contraseña:</label>
+        <input type="password" id="Confirmar Contraseña" placeholder="Confirma tu contraseña" />
+    </div>
+    <br>
+    <div>
+        <label for="Fecha de nacimiento">Fecha de nacimiento:</label>
+        <input type="date" id="Fecha de nacimiento" />
+    </div>
+    <br>
+    <div>
+        <label for="genero">Género:</label>
+        <input type="radio" name="genero"> <label for="">Masculino</label>
+        <input type="radio" name="genero"> <label for="">Femenino</label>
+        <input type="radio" name="genero"> <label for="">Prefiero no decir</label>
+    </div>
+    <br>
+    <div>
+        <input type="checkbox" name="suscribirse" id="suscribirse" checked />
+        <label for="suscribirse">Suscribete a nuestro boletín de noticias.</label>
+    </div>
+    <br>
+
+    <div>
+        <p>Una descripción de mi mismo:</p>
+        <textarea id="Descripción" cols="30" rows="10"></textarea>
+    </div>
+    <br>
+    <div>
+        <p>Selecciona tus intereses:</p>
+        <select>
+            <option>Selecciona</option>
+            <option>Música</option>
+            <option>Deportes</option>
+            <option>Viaje</option>
+            <option>Tecnología</option>
+        </select>
+    </div>
+    <br>
+
+    <input type="submit" value="¡Registrarse!" />
+    </form>
+</body>
+
 </html>
+<div>
